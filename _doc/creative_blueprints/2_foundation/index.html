@@ -1,0 +1,70 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; align-items: stretch; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-left { width: 55%; }
+.mode-landscape .sl-right { width: 45%; }
+.mode-portrait .sl-left { width: 100%; flex: 1; }
+.mode-portrait .sl-right { width: 100%; height: 35%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Problem + Solution -->
+    <div class="sl-left flex flex-col justify-center p-12 gap-8">
+
+      <!-- Slide label -->
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span class="text-xs font-bold tracking-widest uppercase text-emerald-700">Foundation</span>
+      </div>
+
+      <!-- Problem -->
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-5 h-5 rounded-full bg-red-50 border border-red-200 flex items-center justify-center text-red-500 text-xs font-black">✕</span>
+          <span class="text-xs font-bold tracking-widest uppercase text-red-500">The Problem</span>
+        </div>
+        <h2 class="text-2xl font-black text-slate-900 leading-snug mb-2">
+          Challengers quit before the finish line.
+        </h2>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          A 100-unit goal stretches weeks or months. Without a dedicated tracker and something to compete against, participants lose momentum, miss sessions, and abandon the challenge halfway.
+        </p>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-px bg-slate-100"></div>
+
+      <!-- Solution -->
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-5 h-5 rounded-full bg-emerald-50 border border-emerald-200 flex items-center justify-center text-emerald-600 text-xs font-black">✓</span>
+          <span class="text-xs font-bold tracking-widest uppercase text-emerald-600">The Solution</span>
+        </div>
+        <h2 class="text-2xl font-black text-green-900 leading-snug mb-2">
+          A ghost that keeps you honest.
+        </h2>
+        <p class="text-sm text-slate-500 leading-relaxed">
+          Forest Ghost 100 gives every participant a virtual pacer — a "ghost" — to race against. Log each session, watch your score climb toward 100, and hit milestone celebrations that reward every waypoint on the trail.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: atmospheric image panel -->
+    <div class="sl-right relative overflow-hidden bg-green-900">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=lone%20trail%20runner%20in%20dense%20foggy%20forest%2C%20moody%20atmospheric%20green%20light%2C%20determination%20and%20solitude%2C%20dark%20forest%20tones%2C%20cinematic%20editorial%20photography"
+        alt="Trail runner in forest"
+        class="w-full h-full object-cover opacity-75"
+      />
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent 55%, rgba(10,40,20,0.75) 100%)"></div>
+      <div class="absolute bottom-8 left-8 right-8">
+        <p class="text-white text-sm font-semibold leading-snug italic opacity-90">
+          "Not competing with others. Competing with your ghost."
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
