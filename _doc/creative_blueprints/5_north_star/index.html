@@ -1,0 +1,69 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+
+    <!-- Header -->
+    <div class="flex items-center gap-2 mb-1">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      <span class="text-xs font-bold tracking-widest uppercase text-emerald-700">North Star</span>
+    </div>
+    <h2 class="text-3xl font-black text-green-900 mb-1">The one number that matters.</h2>
+    <p class="text-xs font-semibold text-slate-400 tracking-wide mb-5">Projected impact — based on your inputs</p>
+
+    <!-- Verified Operation card -->
+    <div class="rounded-2xl bg-green-900 p-5 mb-4">
+      <span class="text-xs font-bold tracking-widest uppercase text-emerald-400 block mb-2">Verified Operation</span>
+      <h3 class="text-xl font-black text-white mb-1">Challenge Session Logged</h3>
+      <p class="text-sm text-green-200 leading-relaxed">
+        A completed outdoor session recorded by a participant in the app — one unit toward their 100. This is the core domain event the app exists to capture. Clicks, logins, and page views do not count.
+      </p>
+    </div>
+
+    <!-- WVO formula -->
+    <div class="rounded-2xl bg-emerald-50 border border-emerald-100 p-5 mb-4">
+      <span class="text-xs font-bold tracking-widest uppercase text-emerald-700 block mb-3">Weekly Verified Operations (WVO) — Formula</span>
+
+      <div class="flex items-center gap-4 flex-wrap mb-3">
+        <!-- N -->
+        <div class="flex flex-col items-center gap-1">
+          <span class="text-3xl font-black text-green-900">N</span>
+          <span class="text-xs text-slate-500 text-center leading-tight">Active<br/>participants</span>
+          <span class="text-xs font-semibold text-emerald-700 bg-emerald-100 border border-emerald-200 rounded-full px-2 py-0.5">Assumption</span>
+        </div>
+        <span class="text-2xl font-bold text-slate-300">×</span>
+        <!-- F -->
+        <div class="flex flex-col items-center gap-1">
+          <span class="text-3xl font-black text-green-900">F</span>
+          <span class="text-xs text-slate-500 text-center leading-tight">Sessions<br/>per week</span>
+          <span class="text-xs font-semibold text-emerald-700 bg-emerald-100 border border-emerald-200 rounded-full px-2 py-0.5">Assumption</span>
+        </div>
+        <span class="text-2xl font-bold text-slate-300">=</span>
+        <!-- Result -->
+        <div class="flex flex-col items-center gap-1">
+          <span class="text-3xl font-black text-emerald-700">N × F</span>
+          <span class="text-xs text-slate-500 text-center leading-tight">Sessions<br/>logged / week</span>
+        </div>
+      </div>
+
+      <p class="text-xs text-slate-400 border-t border-emerald-100 pt-3">
+        <span class="font-semibold text-slate-500">Example:</span> 50 participants × 3 sessions/week =
+        <span class="font-black text-green-900">150 verified operations / week</span>
+      </p>
+    </div>
+
+    <!-- Value derivation -->
+    <div class="rounded-2xl bg-slate-50 border border-slate-100 p-4 flex items-start gap-5">
+      <div class="flex-1">
+        <span class="text-xs font-bold tracking-widest uppercase text-slate-500 block mb-2">Value per Operation</span>
+        <p class="text-xs text-slate-500 leading-relaxed">
+          Each logged session signals one unit of active participant commitment — the primary health metric for the program. Downstream revenue events (re-enrollment, referrals, premium upgrades) flow from completions. To project monetary value: fill in N and F above, then apply your re-enrollment rate and average revenue per completer.
+        </p>
+      </div>
+      <div class="flex-shrink-0 text-center">
+        <span class="inline-block text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-3 py-1.5 whitespace-nowrap">
+          Fill in N &amp; F to project your WVO
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
